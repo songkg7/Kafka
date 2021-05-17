@@ -2,12 +2,12 @@ version: '2'
 services:
   zookeeper:
     image: wurstmeister/zookeeper
-    container_name: zookeeper for kafka-chat
+    container_name: zookeeper
     ports:
       - "12181:2181"
   kafka:
     image: wurstmeister/kafka:2.12-2.5.0
-    container_name: kafka for kafka-chat
+    container_name: kafka
     ports:
       - "9092:9092"
     environment:
